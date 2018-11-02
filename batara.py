@@ -32,9 +32,9 @@ from linebot.models import (
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('FHvHoOz6VzwmI0hNlVc7p5IfAnpcnQQelaXU6OjZ1oQ4lEGH4UZCy137TXZwsUnkOxDYldg1cyc+rWtjU+34p+fDxEN6dFiW/gq6OSGj+6vkHRxOT8XhZ2dasqItw5BCEQE9nbDoTdrhPhMfGQS7BwdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('3Lrey1+mjYoUAKXJdAkh6IrmGsD3mkTmIrisa/uIxU9d5y8YwRO4aZer/ikaMlcGzi/0tRvaUufGzY4G+bPT4ExfYKCD5kTCch2pQuqFo7Y+fkEBnKzcpSjSCaXVQRh0n6Dfli0HZii1gUjMvlvvcgdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
-handler = WebhookHandler('0f3cde4cd3691acd977fc5d615edd134')
+handler = WebhookHandler('1848fe15d6cb9f97258a7d0b8103395a')
 
 
 #===========[ NOTE SAVER ]=======================
@@ -1584,6 +1584,999 @@ def handle_message(event):
             ),
         )
         message = FlexSendMessage(alt_text="Kontak1 kris", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        )
+        
+    elif text == 'Kris!2!':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-yDkq-cfuZJw/W7Nhypg8WAI/AAAAAAAAA40/nmlcboW7bAwE4GahGtRm8Z_tPxmEa3uZgCJoC/w795-h801-n-rw/807838.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='http://line.me/ti/p/~batara_dewa', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Kris', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='Owner: Kris', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Order',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Self Bot, Bot Protect, Anti JS',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Edit',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Cover, Logo, Logo Video",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Kris', uri="https://line.me/ti/p/~batara_dewa")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak2 kris", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        )
+#=====================================[owner]======================================
+    elif text == 'StrukturOwnerFJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-fdANmMKC_mI/W7aWCaVspwI/AAAAAAAAA_I/_rwMZ4cfWaIra7BpStMpJfjlkicwO_aTQCJoC/w795-h692-n-rw/697672.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-fdANmMKC_mI/W7aWCaVspwI/AAAAAAAAA_I/_rwMZ4cfWaIra7BpStMpJfjlkicwO_aTQCJoC/w795-h692-n-rw/697672.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Kris', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Kris',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Owner FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Kris', uri="https://line.me/ti/p/~krissthea")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Owner", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        )
+#=====================================[Founder]======================================
+    elif text == 'StrukturFounderFJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-yDkq-cfuZJw/W7Nhypg8WAI/AAAAAAAAA40/nmlcboW7bAwE4GahGtRm8Z_tPxmEa3uZgCJoC/w795-h801-n-rw/807838.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-yDkq-cfuZJw/W7Nhypg8WAI/AAAAAAAAA40/nmlcboW7bAwE4GahGtRm8Z_tPxmEa3uZgCJoC/w795-h801-n-rw/807838.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Kris', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Kris',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Founder FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Kris', uri="https://line.me/ti/p/~batara_dewa")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Founder", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        )    
+#=====================================[Co.Founder]======================================
+    elif text == 'StrukturCo.FounderFJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-GX30aymSTMY/W7aLcEb8RgI/AAAAAAAAA6Y/C_SBV8ajIIgaXoLniQgBG_3IOP7MhukagCJoC/w795-h914-n-rw/cinta.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-GX30aymSTMY/W7aLcEb8RgI/AAAAAAAAA6Y/C_SBV8ajIIgaXoLniQgBG_3IOP7MhukagCJoC/w795-h914-n-rw/cinta.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Cinta', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Cinta',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Co.Founder FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Cinta', uri="https://line.me/ti/p/~atyq789")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Co.Founder", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        )  
+#=====================================[Sekretaris]======================================
+    elif text == 'StrukturSekretarisFJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-vg_ZIdVtc_8/W7aMjdpjAOI/AAAAAAAAA7A/-lvMpmjzUXM5C_Gb5U8ATLpYseUGNeY2QCJoC/w795-h795-n-rw/tiena.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-vg_ZIdVtc_8/W7aMjdpjAOI/AAAAAAAAA7A/-lvMpmjzUXM5C_Gb5U8ATLpYseUGNeY2QCJoC/w795-h795-n-rw/tiena.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Tiena', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Tiena',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Sekretaris FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Tiena', uri="https://line.me/ti/p/~")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Sekretaris", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        )  
+#=====================================[Bendahara]======================================
+    elif text == 'StrukturBendaharaFJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-p35k719YHKg/W7aNVo6PAxI/AAAAAAAAA7g/T7ccf0UlImknMT5aj5H_HVxQKDaFfZ_NQCL0BGAs/w795-d-h1061-n-rw/tria.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-p35k719YHKg/W7aNVo6PAxI/AAAAAAAAA7g/T7ccf0UlImknMT5aj5H_HVxQKDaFfZ_NQCL0BGAs/w795-d-h1061-n-rw/tria.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Tria', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Tria',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Bendahara FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Tria', uri="https://line.me/ti/p/~triatienz")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Bendahara", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        )  
+#=====================================[Leader]======================================
+    elif text == 'StrukturLeaderFJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-NpkCPATtJPs/W7aOA7f13OI/AAAAAAAAA8g/JZw-VgEjr4MQnmQMqFLzeHtv9-o6qFEywCJoC/w795-h690-n-rw/hajir.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-NpkCPATtJPs/W7aOA7f13OI/AAAAAAAAA8g/JZw-VgEjr4MQnmQMqFLzeHtv9-o6qFEywCJoC/w795-h690-n-rw/hajir.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Hajir', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Hajir',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Leader FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Hajir', uri="https://line.me/ti/p/~hajirlove")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Leader", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        ) 
+#=====================================[Co.Leader]======================================
+    elif text == 'StrukturCo.LeaderFJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-yR0evhUxE9k/W7aO6LQ6rYI/AAAAAAAAA9M/MnsRmwES7t0CIKsHi0O55coX6H3IRtlpgCJoC/w795-h795-n-rw/bromad.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-yR0evhUxE9k/W7aO6LQ6rYI/AAAAAAAAA9M/MnsRmwES7t0CIKsHi0O55coX6H3IRtlpgCJoC/w795-h795-n-rw/bromad.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Leonardo', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Leonardo',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Co.Leader FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Leonardo', uri="https://line.me/ti/p/~kriansby")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Co.Leader", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        ) 
+#=====================================[Admin1]======================================
+    elif text == 'StrukturAdmin1FJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-4PjSWA-Rk4M/W7aTSTpLXuI/AAAAAAAAA-Y/EIJeXzs4JaUVlizCXwRjmvwooAkfnqn-QCJoC/w398-h530-n-rw/kweni.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-4PjSWA-Rk4M/W7aTSTpLXuI/AAAAAAAAA-Y/EIJeXzs4JaUVlizCXwRjmvwooAkfnqn-QCJoC/w398-h530-n-rw/kweni.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Kweni', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Kweni',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Admin1 FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Kweni', uri="https://line.me/ti/p/~ulinnik")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Admin1", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        ) 
+#=====================================[Admin2]======================================
+    elif text == 'StrukturAdmin2FJS':
+        bubble = BubbleContainer(
+            direction='ltr',
+            hero=ImageComponent(
+                url='https://lh3.googleusercontent.com/-hMd__-LU2l4/W7aTSXLPMlI/AAAAAAAAA-Y/FOoFDWNWk18aYOTQrT6qEsjLNQ5oAR1KQCJoC/w398-h530-n-rw/alyn.jpg',
+                size='full',
+                aspect_ratio='20:13',
+                aspect_mode='cover',
+                action=URIAction(uri='https://lh3.googleusercontent.com/-hMd__-LU2l4/W7aTSXLPMlI/AAAAAAAAA-Y/FOoFDWNWk18aYOTQrT6qEsjLNQ5oAR1KQCJoC/w398-h530-n-rw/alyn.jpg', label='label')
+            ),
+            body=BoxComponent(
+                layout='vertical',
+                contents=[
+                    # title
+                    TextComponent(text='Alyn', weight='bold', size='xl'),
+                    # review
+                    BoxComponent(
+                        layout='baseline',
+                        margin='md',
+                        contents=[
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
+                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
+                                          flex=0)
+                        ]
+                    ),
+                    # info
+                    BoxComponent(
+                        layout='vertical',
+                        margin='lg',
+                        spacing='sm',
+                        contents=[
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Name',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text='Alyn',
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5
+                                    )
+                                ],
+                            ),
+                            BoxComponent(
+                                layout='baseline',
+                                spacing='sm',
+                                contents=[
+                                    TextComponent(
+                                        text='Job',
+                                        color='#aaaaaa',
+                                        size='sm',
+                                        flex=1
+                                    ),
+                                    TextComponent(
+                                        text="Admin2 FJS",
+                                        wrap=True,
+                                        color='#666666',
+                                        size='sm',
+                                        flex=5,
+                                    ),
+                                ],
+                            ),
+                        ],
+                    )
+                ],
+            ),
+            footer=BoxComponent(
+                layout='vertical',
+                spacing='sm',
+                contents=[
+                    # separator
+                    SeparatorComponent(),
+                    # websiteAction
+                    ButtonComponent(
+                        style='link',
+                        height='sm',
+                        action=URIAction(label='Contact Alyn', uri="https://line.me/ti/p/~alyndybala")
+                    )
+                ]
+            ),
+        )
+        message = FlexSendMessage(alt_text="Kontak Admin2", contents=bubble)
+        line_bot_api.reply_message(
+            event.reply_token,
+            message
+        ) 
+#===============================================================================================
+import os
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+app.run(host='0.0.0.0', port=port)
+    
+    
+    
+    
         line_bot_api.reply_message(
             event.reply_token,
             message
