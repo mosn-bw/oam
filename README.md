@@ -7,7 +7,12 @@ OA BATARA
 5. git clone https://github.com/mosn-bw/oam
  
 sudo apt-get install heroku; sudo pip install line-bot-sdk; sudo pip install flask; curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
+https://github.com/mosn-bw/oam#deploy-to
+
 https://heroku.com/deploy
+
+
 ✰ tɛǟʍ ċʏɮɛʀ-ǟʀʍʏ ɮօt ✰
 line://ti/p/~krissthea
 line://ti/p/~batara_dewa
